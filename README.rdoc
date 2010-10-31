@@ -1,6 +1,7 @@
 = rekode
 
-Description goes here.
+This module is a fork of the kode gem by Antono Vasiljev.
+It can be used for indenting ruby code (Rekode::Indenter.
 
 == Note on Patches/Pull Requests
  

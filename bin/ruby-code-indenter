@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../lib/rekode'
+
+if ARGV.any?
+  ARGV.each do |path|
+   Rekode::Indenter.process :file => path, :backup => true
+  end
+elsif !(code = STDIN.read).empty?
+  puts Rekode::Indenter.process(:text => code)
+else
+  STDERR.puts "usage: ruby-code-indenter file.rb"
+  STDERR.puts "usage: cat file.rb | ruby-code-indenter"
+  exit 0
+end
+
+# vim: syntax=Ruby

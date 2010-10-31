@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rekode"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "rekode indents ruby code"
+    gem.description = "rekode indents ruby code" 
     gem.email = "olle@endforward.nl"
     gem.homepage = "http://github.com/osdezwart/rekode"
     gem.authors = ["Olle de Zwart"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.executables = "ruby-code-indent"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
