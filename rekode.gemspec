@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "bin/ruby-code-indenter",
      "lib/rekode.rb",
+     "rekode.gemspec",
      "test/helper.rb",
      "test/test_rekode.rb"
   ]
